@@ -63,3 +63,89 @@
   </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Jupiter Clone</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:"Segoe UI",Roboto,sans-serif}
+    body{background:#f4f7ff;color:#172b4d}
+    header{background:#003366;color:white;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center}
+    header h1{font-size:1.5rem}
+    nav a{color:white;text-decoration:none;margin-left:1rem;font-weight:500}
+    nav a:hover{text-decoration:underline}
+    main{padding:2rem;max-width:1000px;margin:auto}
+    .welcome{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+    .welcome h2{color:#003366}
+    button{padding:0.5rem 1rem;background:#003366;color:white;border:none;border-radius:5px;cursor:pointer}
+    button:hover{background:#002244}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin-top:2rem}
+    .card{background:white;padding:1.5rem;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,0.08)}
+    .card h3{color:#003366;margin-bottom:0.8rem}
+    footer{text-align:center;padding:1rem;background:#003366;color:white;margin-top:2rem}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jupiter Dashboard</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Assignments</a>
+      <a href="#">Grades</a>
+      <a href="#">Messages</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="welcome">
+      <div>
+        <h2>Welcome, demouser</h2>
+        <p>School: demo-school</p>
+      </div>
+      <div>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Assignments</h3>
+        <ul>
+          <li>Math — Homework 4 — Due Oct 25</li>
+          <li>Science — Lab Report — Due Oct 28</li>
+          <li>English — Essay Draft — Due Oct 30</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Grades</h3>
+        <p>Average: 92%</p>
+        <p>Math: 94%</p>
+        <p>Science: 90%</p>
+        <p>English: 93%</p>
+      </div>
+
+      <div class="card">
+        <h3>Announcements</h3>
+        <p>No new announcements.</p>
+      </div>
+
+      <div class="card">
+        <h3>Messages</h3>
+        <p>You have 1 unread message from Mr. Lee.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>© 2025 Jupiter Clone — Demo Only</footer>
+
+  <script>
+    function logout() {
+      alert("Logged out successfully!");
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
